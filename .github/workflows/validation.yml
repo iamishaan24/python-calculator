@@ -19,10 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-           echo "Testing addition (2 + 2)" 
-           result=$(python -c "from calculator import add; print (float(add(2, 2)))") 
+           echo "Testing addition (2 + 2)"
+           result=$(python -c "from calculator import add; print (float(add(2, 2)))")
+           echo "Result: $result"
            if [ "$(printf "%.1f" $result)" != "4.0" ]; then
-           echo "Addition test failed: Expected 4.0, Got $result" 
+           echo "Addition test failed: Expected 4.0, Got $result"
            exit 1
            fi
            
