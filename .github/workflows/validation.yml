@@ -1,12 +1,6 @@
-name: Validate Calculator
-
+name: validation
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   test_calculator:
