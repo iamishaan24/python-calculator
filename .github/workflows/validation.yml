@@ -16,7 +16,7 @@ jobs:
 
       - name: Run tests
         run: |
-          echo "2\n2\n1" | python calculator.py | grep "The sum of 2 and 2 is 4.0"
-          echo "5\n2\n2" | python calculator.py | grep "The difference of 5 and 2 is 3.0"
-          echo "3\n3\n3" | python calculator.py | grep "The product of 3 and 3 is 9.0"
-          echo "10\n2\n4" | python calculator.py | grep "The quotient of 10 and 2 is 5.0"
+          python calculator.py 2 2 1 | grep "The sum of 2 and 2 is 4.0"
+          python calculator.py 5 2 2 | grep "The difference of 5 and 2 is 3.0"
+          python calculator.py 3 3 3 | grep "The product of 3 and 3 is 9.0"
+          python calculator.py 10 2 4 | grep "The quotient of 10 and 2 is 5.0"
